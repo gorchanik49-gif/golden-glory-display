@@ -26,7 +26,7 @@
  --whatsapp: oklch(.52 .14 153); --whatsapp-foreground: oklch(.99 0 0);
  --services-top: oklch(.25 .05 165); --services-bottom: oklch(.185 .042 158);
  --services-card: oklch(.31 .058 162); --services-foreground: oklch(.97 .012 95);
- --services-muted: oklch(.88 .03 156); --services-border: oklch(.97 .012 95 / .2);
+ --services-muted: oklch(.88 .03 156); --services-border: oklch(.97 .012 95 / .2); --services-gold: oklch(.85 .12 88);
  --hero-shade: linear-gradient(90deg, oklch(.1 .01 90 / .08), oklch(.1 .01 90 / .7) 55%, oklch(.1 .01 90 / .96));
  --hero-bottom: linear-gradient(0deg, var(--background), transparent);
 }
@@ -87,13 +87,16 @@
 .services-band { background:linear-gradient(180deg,var(--services-top),var(--services-bottom)); border-block:1px solid var(--services-border); }
 .services-band .section-heading h2 { color:var(--services-foreground); }
 .services-band .section-heading p { color:var(--services-muted); }
+.services-band .eyebrow { color:var(--services-gold); }
+.services-band .en-heading { color:var(--services-gold); }
+.services-band .ornament { color:var(--services-gold); }
 .services-band .ornament::before,.services-band .ornament::after { background:var(--services-border); }
 .service-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; padding-bottom:70px; }
-.service-card { background:var(--services-card); color:var(--services-foreground); border:1px solid var(--services-border); border-radius:6px; padding:29px 25px; text-align:right; border-top:3px solid var(--primary); }
-.service-card svg { color:var(--primary); width:27px; height:27px; margin-left:auto; }
+.service-card { background:var(--services-card); color:var(--services-foreground); border:1px solid var(--services-border); border-radius:6px; padding:29px 25px; text-align:right; border-top:3px solid var(--services-gold); }
+.service-card svg { color:var(--services-gold); width:27px; height:27px; margin-left:auto; }
 .service-card h3 { font-size:19px; font-weight:500; margin:15px 0 0; color:var(--services-foreground); }
 .service-card p { font-size:12px; color:var(--services-muted); margin:8px 0 0; }
-.service-en-title { font-size:11px; text-transform:uppercase; letter-spacing:1.6px; color:var(--primary); margin-top:8px; }
+.service-en-title { font-size:11px; text-transform:uppercase; letter-spacing:1.6px; color:var(--services-gold); margin-top:8px; }
 .service-en-text { font-size:11px; color:var(--services-muted); margin:7px 0 0; text-align:left; }
 .about-band { background:var(--secondary); border-block:1px solid var(--border); padding:60px 0; }
 .about-content { text-align:center; max-width:760px; margin:auto; }
@@ -123,9 +126,10 @@
  .section-heading { padding:45px 0 25px; } .section-heading h2 { font-size:25px; } .section-heading p { font-size:11px; }
  .banner-label h3 { font-size:18px; } .section-number span { display:none; } .banner-label { margin-bottom:15px; }
  .banner-bottom { grid-template-columns:1fr; gap:15px; } .banner-bottom p { grid-row:1; font-size:12px; } .banner-bottom .contact-actions { justify-content:flex-end; }
- .banner-section { padding:20px 0 30px; } .service-grid { grid-template-columns:1fr; gap:13px; padding-bottom:40px; } .service-card { padding:22px; }
+ .banner-section { padding:20px 0 30px; } .service-grid { grid-template-columns:1fr; gap:13px; padding-bottom:86px; } .service-card { padding:22px; }
  .about-band { padding:35px 0; } .about-content h2 { font-size:23px; } .about-content p { font-size:13px; }
- .footer-top { flex-direction:column; } .footer-bottom { flex-direction:column; gap:12px; text-align:center; } .contact-number { font-size:25px; }
+  .footer-top { flex-direction:column; } .footer-bottom { flex-direction:column; gap:12px; text-align:center; } .contact-number { font-size:25px; }
+  .floating-whatsapp { bottom:16px; right:16px; width:46px; height:46px; } .floating-whatsapp svg { width:24px; height:24px; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none !important; } }
 .en-line { display:block; font-family:inherit; font-size:13px; line-height:1.6; opacity:.7; text-align:center; direction:ltr; margin-top:6px; }
