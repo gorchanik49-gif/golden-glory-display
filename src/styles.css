@@ -130,3 +130,4 @@
 .nav-bi .urdu { font-size:.85em; }
 .trust-item .en-line { margin-top:0; font-size:11px; }
 .contact-actions .ui-button, .contact-actions a { height:auto; min-height:2.75rem; padding-block:6px; }
+.banner-label { flex-wrap:wrap; } .banner-label .en-heading { flex-basis:100%; order:3; }
