@@ -131,3 +131,10 @@
 .trust-item .en-line { margin-top:0; font-size:11px; }
 .contact-actions .ui-button, .contact-actions a { height:auto; min-height:2.75rem; padding-block:6px; }
 .banner-label { flex-wrap:wrap; } .banner-label .en-heading { flex-basis:100%; order:3; }
+.hero-video-band { padding:10px 0 62px; }
+.video-frame { margin:0; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:var(--secondary); box-shadow:0 22px 60px oklch(.1 0 0 / .5); }
+.hero-video { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:var(--background); }
+.video-caption { display:flex; flex-direction:column; align-items:center; gap:2px; padding:15px 20px; border-top:1px solid var(--border); text-align:center; }
+.video-caption .urdu { font-size:17px; color:var(--primary); line-height:2; }
+.video-caption .en-line { margin-top:2px; font-size:12px; }
+@media (max-width:640px) { .hero-video-band { padding:6px 0 42px; } .video-caption { padding:12px 14px; } .video-caption .urdu { font-size:14px; } .video-caption .en-line { font-size:11px; } }
