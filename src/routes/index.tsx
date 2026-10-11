@@ -1,24 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { createFileRoute } from '@tanstack/react-router';
+import { BookOpen, MessageCircle, ShieldCheck, LockKeyhole } from 'lucide-react';
+import hero from '@/assets/mosque-hero.jpg';
+import { SiteShell } from '@/components/website/SiteShell';
+import { ContactActions, SectionHeading, ServiceGrid, AboutContent, banners, pageHead } from '@/components/website/content';
+export const Route = createFileRoute('/')({head:()=>pageHead('اسلامی روحانی رہنمائی','پروفیسر عامل سلیمان شاہ سے استخارہ، ازدواجی، گھریلو اور زندگی کے اہم معاملات میں روحانی مشاورت کے لیے رابطہ کریں۔'),component:Index});
+function Index() { return <SiteShell><section className="hero"><img src={hero} alt="سنہری محراب اور مسجد کا پرسکون منظر" width={1600} height={912} className="hero-image" fetchPriority="high"/><div className="site-width"><div className="hero-content"><div className="eyebrow">In the light of Quran & Sunnah</div><h1 className="urdu" dir="rtl" lang="ur">اسلامی روحانی رہنمائی</h1><p className="hero-subtitle urdu" dir="rtl" lang="ur">زندگی کے اہم معاملات میں قرآن و سنت کی روشنی میں رہنمائی حاصل کریں۔</p><p className="hero-description urdu" dir="rtl" lang="ur">استخارہ، ازدواجی معاملات، گھریلو مسائل اور دیگر زندگی کے معاملات میں آن لائن مشاورت کے لیے رابطہ کریں۔</p><ContactActions/><div className="hero-note"><span className="urdu" dir="rtl" lang="ur">اپنے معاملے پر اطمینان سے گفتگو کریں</span><LockKeyhole size={13}/></div></div></div></section><div className="trust-strip"><div className="site-width trust-inner"><div className="trust-item"><BookOpen/><span className="urdu" lang="ur">قرآن و سنت کی روشنی میں</span></div><div className="trust-item"><ShieldCheck/><span className="urdu" lang="ur">انفرادی رہنمائی</span></div><div className="trust-item"><MessageCircle/><span className="urdu" lang="ur">آن لائن مشاورت</span></div></div></div><div className="site-width"><SectionHeading title="رہنمائی، اطمینان اور بہتر فیصلے" label="A path towards clarity" description="زندگی کے مختلف معاملات میں روحانی رہنمائی اور مشاورت"/>{banners.map((banner,index)=><section className="banner-section" key={banner.title}><div className="banner-label"><div className="section-number">0{index+1}<span>{banner.label}</span></div><h3 className="urdu" lang="ur" dir="rtl">{banner.title}</h3></div><img src={banner.image.url} alt={banner.title} className="banner-image" loading="lazy" width={1536} height={864}/><div className="banner-bottom"><ContactActions both={index===3}/><p className="urdu" lang="ur" dir="rtl">{banner.description}</p></div></section>)}<SectionHeading title="ہماری خدمات" label="Guidance for life's matters"/><ServiceGrid/></div><section className="about-band"><div className="site-width"><AboutContent/></div></section></SiteShell>; }
