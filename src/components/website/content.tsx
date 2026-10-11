@@ -1,9 +1,9 @@
 import { BookOpen, HeartHandshake, House, Users, BriefcaseBusiness, Globe, Phone, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import spiritual from '@/assets/spiritual-banner.png.asset.json';
-import marriage from '@/assets/marriage-banner.png.asset.json';
-import family from '@/assets/family-banner.png.asset.json';
-import consultation from '@/assets/consultation-banner.png.asset.json';
+import spiritual from '@/assets/spiritual-banner.png';
+import marriage from '@/assets/marriage-banner.png';
+import family from '@/assets/family-banner.png';
+import consultation from '@/assets/consultation-banner.png';
 export const name = 'پروفیسر عامل سلیمان شاہ';
 export const phone = '0092 305 7739398';
 export const whatsapp = 'https://wa.me/923057739398';

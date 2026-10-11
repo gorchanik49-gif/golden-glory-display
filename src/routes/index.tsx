@@ -1,9 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { BookOpen, MessageCircle, ShieldCheck, LockKeyhole } from 'lucide-react';
 import hero from '@/assets/mosque-hero.jpg';
-import heroVideo from '@/assets/hero-video.mp4.asset.json';
-import heroWebm from '@/assets/hero-video.webm.asset.json';
-import heroPoster from '@/assets/hero-poster.jpg.asset.json';
+import heroVideo from '@/assets/hero-video.mp4';
+import heroWebm from '@/assets/hero-video.webm';
+import heroPoster from '@/assets/hero-poster.jpg';
 import { SiteShell } from '@/components/website/SiteShell';
 import { ContactActions, SectionHeading, ServiceGrid, AboutContent, banners, pageHead } from '@/components/website/content';
 export const Route = createFileRoute('/')({head:()=>pageHead('اسلامی روحانی رہنمائی','پروفیسر عامل سلیمان شاہ سے استخارہ، ازدواجی، گھریلو اور زندگی کے اہم معاملات میں روحانی مشاورت کے لیے رابطہ کریں۔'),component:Index});
