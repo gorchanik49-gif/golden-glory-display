@@ -12,3 +12,4 @@
 - Shared public website navigation and footer live in a reusable SiteShell component so all content pages remain consistent.
 - Banner images are imported through individual Lovable Assets pointers so each uploaded image can be replaced independently.
 - Brand content and contact actions live in a shared website module to keep Urdu copy and phone links consistent across pages.
+- Uploaded videos are served through Lovable Assets as a faststart MP4 plus a WebM source with a poster frame, so browsers lacking H.264 (and older phones) still play them instead of showing a blank box.

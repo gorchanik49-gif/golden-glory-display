@@ -2,3 +2,4 @@
 - [x] Create black-and-gold Urdu pages and navigation.
 - [x] Add four replaceable banners and correct call/WhatsApp links.
 - [x] Verify desktop/mobile appearance, navigation and route tests.
+- [x] Add the uploaded video below the hero note so it plays on every browser.
