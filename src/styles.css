@@ -44,7 +44,7 @@
 .brand { display:flex; align-items:center; gap:15px; text-decoration:none; }
 .brand-name { font-size:20px; color:var(--primary); line-height:2.3; }
 .brand-english { font-size:9px; text-transform:uppercase; letter-spacing:1.4px; color:var(--muted-foreground); }
-.brand-emblem { width:48px; height:56px; border:1px solid var(--primary); border-radius:50% 50% 4px 4px; display:grid; place-items:center; color:var(--primary); flex-shrink:0; }
+.brand-emblem { width:58px; height:58px; object-fit:contain; flex-shrink:0; filter:drop-shadow(0 2px 8px oklch(.1 0 0 / .5)); }
 .nav-links { display:flex; align-items:center; gap:28px; }
 .nav-links a { font-size:12px; text-decoration:none; color:var(--muted-foreground); padding-block:12px; transition:color .2s; }
 .nav-links a:hover,.nav-links a[data-status=active] { color:var(--primary); }
@@ -116,7 +116,7 @@
 @media (max-width:640px) {
  .site-width { width:calc(100% - 36px); }
  .header-inner { min-height:85px; grid-template-columns:minmax(0,1fr) auto; gap:12px; }
- .brand-name { font-size:15px; } .brand-english { font-size:7px; letter-spacing:.8px; } .brand-emblem { width:37px; height:44px; } .brand { gap:10px; min-width:0; }
+ .brand-name { font-size:15px; } .brand-english { font-size:7px; letter-spacing:.8px; } .brand-emblem { width:40px; height:40px; } .brand { gap:10px; min-width:0; }
  .mobile-menu-button { display:inline-flex; }
  .header-inner > .nav-links { display:none; } .mobile-nav { display:flex; justify-content:center; padding:8px 0 15px; border-top:1px solid var(--border); }
  .hero { min-height:580px; } .hero-content { max-width:100%; padding:48px 0; } .hero-image { object-position:35% center; }
