@@ -121,3 +121,12 @@
  .footer-top { flex-direction:column; } .footer-bottom { flex-direction:column; gap:12px; text-align:center; } .contact-number { font-size:25px; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none !important; } }
+.en-line { display:block; font-family:inherit; font-size:13px; line-height:1.6; opacity:.7; text-align:center; direction:ltr; margin-top:6px; }
+.en-heading { font-size:14px; letter-spacing:1.5px; text-transform:uppercase; color:var(--primary); margin-top:6px; direction:ltr; }
+.hero-en-title { font-size:clamp(18px,3vw,28px); color:var(--primary); letter-spacing:1px; margin-top:4px; }
+.btn-bi { display:inline-flex; flex-direction:column; align-items:center; line-height:1.2; }
+.btn-en { font-size:10px; opacity:.85; letter-spacing:.5px; }
+.nav-bi { display:inline-flex; flex-direction:column; align-items:center; line-height:1.15; }
+.nav-bi .urdu { font-size:.85em; }
+.trust-item .en-line { margin-top:0; font-size:11px; }
+.contact-actions .ui-button, .contact-actions a { height:auto; min-height:2.75rem; padding-block:6px; }
